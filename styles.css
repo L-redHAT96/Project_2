@@ -1,0 +1,102 @@
+/* Reset default browser styles */
+html, body, header, nav, ul, li, p, section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  overflow-y: auto;
+}
+
+nav ul {
+  list-style-type: none;
+
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+}
+
+/* Main content styles */
+#main-doc {
+  margin-left: 270px; /* Adjust based on nav width */
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: justify;
+}
+
+.main-section header {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-section p {
+  margin-bottom: 15px;
+}
+
+.main-section ul li{
+  list-style-type: none;
+  text-indent: 40px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+    position: static;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
